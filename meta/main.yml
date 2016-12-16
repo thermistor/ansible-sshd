@@ -139,11 +139,11 @@ galaxy_info:
   #  - quantal
   #  - raring
   #  - saucy
-   - trusty
+    - trusty
   #  - utopic
   #  - vivid
   #  - wily
-   - xenial
+    - xenial
   #  - yakkety
   #- name: Debian
   #  versions:
