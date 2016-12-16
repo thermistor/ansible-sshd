@@ -1,5 +1,9 @@
 # Ansible role for sshd
 
+This config file is based on what shipped with Ubuntu xenial 16.04 LTS.
+
+## Example playbook
+
 Configures /etc/ssh/sshd_config. Defaults are secure except it uses port 22.
 
     - role: sshd
@@ -18,3 +22,8 @@ Here is example usage to allow some accounts to use sftp only, see also the ([sf
       sshd_permit_root_login: 'no'
       tags:
         - sshd
+
+## License
+
+MIT
+
