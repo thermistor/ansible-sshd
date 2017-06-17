@@ -1,6 +1,6 @@
 # Ansible role for sshd
 
-This config file is based on what shipped with Ubuntu xenial 16.04 LTS.
+The `sshd_config` file is based on what shipped with Ubuntu xenial 16.04 LTS.
 
 ## Example playbook
 
@@ -22,6 +22,12 @@ Here is example usage to allow some accounts to use sftp only, see also the ([sf
       sshd_permit_root_login: 'no'
       tags:
         - sshd
+
+Note that by default `sshd_sftp_enabled` is set to `no`. So the following must be added
+to your `ansible.cfg`.
+
+    [ssh_connection]
+    scp_if_ssh = True
 
 ## License
 
