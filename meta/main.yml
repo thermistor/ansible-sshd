@@ -2,6 +2,7 @@ galaxy_info:
   author: Weston Triemstra
   description: Configure sshd
   company: Netsign
+  github_branch: main
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -130,21 +131,8 @@ galaxy_info:
   #  - 9.3
   - name: Ubuntu
     versions:
-  #  - all
-  #  - lucid
-  #  - maverick
-  #  - natty
-  #  - oneiric
-  #  - precise
-  #  - quantal
-  #  - raring
-  #  - saucy
-    - trusty
-  #  - utopic
-  #  - vivid
-  #  - wily
-    - xenial
-  #  - yakkety
+    - focal
+    - jammy
   #- name: Debian
   #  versions:
   #  - all
