@@ -1,9 +1,16 @@
 ---
 
 - name: Copy sshd_config into place
-  template: src=sshd_config.{{ ansible_distribution_release }}.j2 dest=/etc/ssh/sshd_config owner=root group=root mode=0644
-  notify: restart ssh
+  ansible.builtin.template:
+    src: sshd_config.{{ ansible_distribution_release }}.j2
+    dest: /etc/ssh/sshd_config
+    owner: root
+    group: root
+    mode: '0644'
+  notify: Restart ssh
 
 - name: Create the sftponly group
-  group: name=sftponly state=present
+  ansible.builtin.group:
+    name: sftponly
+    state: present
   when: sshd_sftp_only_enabled
