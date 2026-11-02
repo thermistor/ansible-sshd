@@ -1,5 +1,7 @@
 ---
 sshd_port: 22
+sshd_ipv4_listen_address: 0.0.0.0
+sshd_ipv6_listen_address: '::'
 sshd_permit_root_login: 'no'
 sshd_password_authentication: 'no'
 sshd_x11_forwarding: 'no'
