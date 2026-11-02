@@ -1,6 +1,6 @@
 # Ansible role for sshd
 
-The `sshd_config` file works for Ubuntu 22.04 LTS and 20.04 LTS.
+Works for Ubuntu 20.04 LTS - Ubuntu 26.04 LTS.
 
 ## Example playbook
 
